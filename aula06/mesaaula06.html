@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Recaptulando o conteúdo</title>
+</head>
+<body>
+    <script>
+        /*
+            Encontre os rastros de erros de escrita nesse código;
+            Todos os erros são erros de escrita, os corrigindo o sistema voltará a funcionar.
+        */
+        // 1. Guarda o nome do usuário.
+        var nomeDoUsuario = prompt('Qual o seu nome?');
+        // 2. Guarda a quantidade de dolares que o usuário deseja cotar.
+        var quantidadeDolares = prompt('Quantos dólares ele gostaria de cotar?');
+        // 3. Valor do dolar hoje
+        var cotacaoDolarHoje = 5.3;
+        // 4. Função que será reaproveitada para apresentar o resultado da cotação.
+        function apresentarResultadoDaCotacao() {
+            alert (`Olá ${nomeDoUsuario}. US$ ${quantidadeDolares} valem R$ ${quantidadeDolares * cotacaoDolarHoje} hoje.`)
+        }
+            
+        // 5. Apresenta o resultado da cotação.
+        apresentarResultadoDaCotacao();
+    </script>
+
+</body>
+
+</html>
+
