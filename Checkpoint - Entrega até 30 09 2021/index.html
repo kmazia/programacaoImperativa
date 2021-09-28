@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="./index.js"></script>
+        <link rel="stylesheet" type="text/css" href="./index.css" media="screen" />
+    </head>
+    <body>
+
+    <p>Paso 1 - Mostre os produtos já cadastrados com o botão abaixo</p>
+
+    <button type="button" class="btn-primary" onclick="showProducts()">MOSTRAR PRODUTOS</button>
+    <br>
+    <br>
+
+    <p>Paso 2 (Opcional) - Cadastre novos produtos</p>
+
+    <br>
+    <br>
+
+
+    <form>
+        <label for="name" class="default-label">Nome do produto</label>
+        <input type="text" class="default-input" id="name" name="name">
+        <label for="price" class="default-label">Valor do produto (ex: 10.20)</label>
+        <input type="text" class="default-input" id="price" name="price">
+        <label for="quality" class="default-label">Qualidade do produto (0 - 10)</label>
+        <input type="number" class="default-input" id="quality" name="quality">
+        <label for="status" class="default-label">Status</label>
+        <select name="status" class="default-input" id="status">
+            <option value="true" selected>ATIVO</option>
+            <option value="false">INATIVO</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <button type="button" class="btn-primary" onclick="newProduct()">CRIAR PRODUTO</button>
+    </form>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <table>
+        <thead>
+          <tr>
+            <th data-field="name">Nome do produto</th>
+            <th data-field="price">Valor do produto</th>
+            <th data-field="quality">Qualidade do produto</th>
+            <th data-field="status">Status</th>
+          </tr>
+        </thead>
+      
+        <tbody id="myList1">
+      
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Psso 3 - Filtrar produtos seguindo as regras a seguir:
+
+        <ul>
+            <li>Valor entre 482 e 1600;</li>
+            <li>Qualidade superior a 60;</li>
+            <li>Status como disponível.</li>
+        </ul>
+
+        <br>
+        <br>
+        Em seguida adcioná-los em seu carrinho
+    </p>
+    <br>
+    <br>
+    <br>
+    <button type="button" class="btn-primary" onclick="mountCart()">ADICIONAR AO CARRINHO</button>
+
+    <table>
+        <thead>
+          <tr>
+            <th data-field="name">Nome do produto</th>
+            <th data-field="price">Valor do produto</th>
+            <th data-field="quality">Qualidade do produto</th>
+            <th data-field="status">Status</th>
+          </tr>
+        </thead>
+      
+        <tbody id="cart">
+      
+        </tbody>
+      </table>
+</body>
+</html>
